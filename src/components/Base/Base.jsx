@@ -10,6 +10,10 @@ import BlueprintPattern from "../../images/blueprint.svg";
 import darkTheme from "./dark-theme";
 import baseTheme from "./base-theme";
 
+const propTypes = {
+  children: PropTypes.node.isRequired,
+};
+
 const GlobalStyle = createGlobalStyle`
   ${({ theme }) => css`
     ${normalize}
@@ -121,8 +125,6 @@ function Base({ children }) {
   );
 }
 
-Base.propTypes = {
-  children: PropTypes.node.isRequired,
-};
+Base.propTypes = propTypes;
 
 export default Base;

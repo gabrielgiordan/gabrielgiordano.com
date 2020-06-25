@@ -4,6 +4,11 @@ import PropTypes from "prop-types";
 
 import { Text, Subtitle } from "../Text";
 
+const propTypes = {
+  title: PropTypes.node.isRequired,
+  html: PropTypes.node.isRequired,
+};
+
 const ContentContainer = styled.div`
   ${({ theme }) => css`
     width: 42em;
@@ -23,9 +28,6 @@ function Article({ title, html }) {
   );
 }
 
-Article.propTypes = {
-  title: PropTypes.node.isRequired,
-  html: PropTypes.node.isRequired,
-};
+Article.propTypes = propTypes;
 
 export default Article;

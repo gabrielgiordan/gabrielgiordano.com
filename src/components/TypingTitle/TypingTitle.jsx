@@ -5,6 +5,16 @@ import styled, { css } from "styled-components";
 
 import { Title } from "../Text";
 
+const propTypes = {
+  quotes: PropTypes.arrayOf(PropTypes.string),
+  loop: PropTypes.number,
+};
+
+const defaultProps = {
+  quotes: [],
+  loop: Infinity,
+};
+
 const TypingTitleContainer = styled.div`
   ${({ theme }) => css`
     width: 0;
@@ -58,14 +68,7 @@ function TypingTitle({ quotes, loop }) {
   );
 }
 
-TypingTitle.propTypes = {
-  quotes: PropTypes.arrayOf(PropTypes.string),
-  loop: PropTypes.number,
-};
-
-TypingTitle.defaultProps = {
-  quotes: [],
-  loop: Infinity,
-};
+TypingTitle.propTypes = propTypes;
+TypingTitle.defaultProps = defaultProps;
 
 export default TypingTitle;

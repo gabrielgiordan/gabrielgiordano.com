@@ -3,6 +3,17 @@ import PropTypes from "prop-types";
 import { Helmet } from "react-helmet";
 import { helmetJsonLdProp } from "react-schemaorg";
 
+const propTypes = {
+  lang: PropTypes.string,
+  meta: PropTypes.arrayOf(PropTypes.object),
+  title: PropTypes.string.isRequired,
+};
+
+const defaultProps = {
+  lang: `en`,
+  meta: [],
+};
+
 function SEO({ lang, meta, title }) {
   const author = "Gabriel Giordano";
   const description =
@@ -99,15 +110,7 @@ function SEO({ lang, meta, title }) {
   );
 }
 
-SEO.defaultProps = {
-  lang: `en`,
-  meta: [],
-};
-
-SEO.propTypes = {
-  lang: PropTypes.string,
-  meta: PropTypes.arrayOf(PropTypes.object),
-  title: PropTypes.string.isRequired,
-};
+SEO.defaultProps = defaultProps;
+SEO.propTypes = propTypes;
 
 export default SEO;
