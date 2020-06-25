@@ -23,7 +23,7 @@ function Article({ title, html }) {
   return (
     <ContentContainer>
       <Subtitle role="presentation">{title}</Subtitle>
-      <Text dangerouslySetInnerHTML={{ __html: html }} />
+      <Text as="div" dangerouslySetInnerHTML={{ __html: html }} />
     </ContentContainer>
   );
 }

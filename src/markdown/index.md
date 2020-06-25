@@ -1,7 +1,7 @@
 ---
 page: /
 author: Gabriel Giordano
-title: Home
+title: About Me
 quotes:
   - Hello.
   - It's Gabriel Giordano.

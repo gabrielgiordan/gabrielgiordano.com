@@ -60,6 +60,6 @@ module.exports = {
         domains: ["https://fonts.gstatic.com", "https://fonts.googleapis.com"],
       },
     },
-    "gatsby-plugin-offline"
+    "gatsby-plugin-offline",
   ],
 };

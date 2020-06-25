@@ -42,13 +42,13 @@ function ContactIcons() {
       <IconLink href={`mailto:${data.mail}`} rel="author">
         <MailIcon role="img" aria-label="Mail" />
       </IconLink>
-      <IconLink href={data.github} rel="author" target="_blank">
+      <IconLink href={data.github} rel="author noopener" target="_blank">
         <GitHubIcon role="img" aria-label="GitHub" />
       </IconLink>
-      <IconLink href={data.linkedin} rel="author" target="_blank">
+      <IconLink href={data.linkedin} rel="author noopener" target="_blank">
         <LinkedInIcon role="img" aria-label="LinkedIn" />
       </IconLink>
-      <IconLink href={data.medium} rel="author" target="_blank">
+      <IconLink href={data.medium} rel="author noopener" target="_blank">
         <MediumIcon role="img" aria-label="Medium" />
       </IconLink>
     </ContactContainer>

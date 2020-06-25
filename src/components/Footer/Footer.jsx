@@ -50,15 +50,27 @@ function Footer() {
     <FooterContainer>
       <FooterContentContainer>
         <SmallText>Open-sourced on </SmallText>
-        <SmallIconLink href={data.repository} rel="external" target="_blank">
+        <SmallIconLink
+          href={data.repository}
+          rel="external noopener"
+          target="_blank"
+        >
           <GitHubIcon role="img" aria-label="GitHub Repository" />
         </SmallIconLink>
         <SmallText>built with </SmallText>
-        <SmallIconLink href={data.react} rel="external" target="_blank">
+        <SmallIconLink
+          href={data.react}
+          rel="external noopener"
+          target="_blank"
+        >
           <ReactIcon role="img" aria-label="React" />
         </SmallIconLink>
         <SmallText>,</SmallText>
-        <SmallIconLink href={data.gatsby} rel="external" target="_blank">
+        <SmallIconLink
+          href={data.gatsby}
+          rel="external noopener"
+          target="_blank"
+        >
           <GatsbyIcon role="img" aria-label="Gatsby" />
         </SmallIconLink>
         <SmallText>.</SmallText>

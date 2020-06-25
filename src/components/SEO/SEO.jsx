@@ -34,7 +34,7 @@ function SEO({ lang, meta, title }) {
         {
           name: `keywords`,
           content:
-            "software engineer full stack elixir erlang otp clojure scala c c++ js nodejs react unity3d developer computer science",
+            "Senior Software Engineer, Full Stack, Elixir, Erlang, OTP, Clojure, Scala, C, C++, Java, JavaScript, JS, React, Unity3d, Developer, Computer Science",
         },
         {
           name: `subject`,
@@ -96,14 +96,14 @@ function SEO({ lang, meta, title }) {
           name: author,
           gender: `male`,
           alternateName: "Gabriel Giordano Medina",
-          nationality: `Brazillian`,
-          alumniOf: {
-            "@type": "CollegeOrUniversity",
-            name: ["FIAP"],
-          },
+          nationality: `Brazilian`,
           description: `Software Engineer`,
           disambiguatingDescription: "Software Engineer at SumUp",
-          knowsAbout: ["Compilers", "Computer Science"],
+          knowsAbout: [
+            "Software Engineering",
+            "Computer Science",
+            "System Design",
+          ],
           image:
             "https://s.gravatar.com/avatar/6ea1b94c835fed259ad11d2133793a73?s=512",
           email: "mailto:hello@gabrielgiordano.com",
@@ -113,7 +113,6 @@ function SEO({ lang, meta, title }) {
             "https://www.youtube.com/c/GabrielGiordanoMedina",
             "https://www.linkedin.com/in/gabrielgiordano/",
             "https://github.com/gabrielgiordan",
-            "https://gabrielgiordano.com",
           ],
           jobTitle: "Software Engineer",
         }),

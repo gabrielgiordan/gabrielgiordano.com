@@ -25,7 +25,7 @@ function Home() {
 
   return (
     <>
-      <SEO title={data.title} />
+      <SEO title="Home" />
       <Base>
         <TypingTitle quotes={data.quotes} loop={Infinity} />
         <Article title={data.title} html={content} />
