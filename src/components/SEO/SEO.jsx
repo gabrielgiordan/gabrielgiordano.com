@@ -57,6 +57,18 @@ function SEO({ lang, meta, title }) {
           content: `website`,
         },
         {
+          property: `og:site_name`,
+          content: `Gabriel Giordano`,
+        },
+        {
+          property: `og:locale`,
+          content: `en_US`,
+        },
+        {
+          property: `og:type`,
+          content: `website`,
+        },
+        {
           name: `twitter:card`,
           content: `summary`,
         },

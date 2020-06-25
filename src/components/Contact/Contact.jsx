@@ -39,17 +39,17 @@ function ContactIcons() {
 
   return (
     <ContactContainer>
-      <IconLink href={`mailto:${data.mail}`}>
-        <MailIcon />
+      <IconLink href={`mailto:${data.mail}`} rel="author">
+        <MailIcon role="img" aria-label="Mail" />
       </IconLink>
-      <IconLink href={data.github} target="_blank">
-        <GitHubIcon />
+      <IconLink href={data.github} rel="author" target="_blank">
+        <GitHubIcon role="img" aria-label="GitHub" />
       </IconLink>
-      <IconLink href={data.linkedin} target="_blank">
-        <LinkedInIcon />
+      <IconLink href={data.linkedin} rel="author" target="_blank">
+        <LinkedInIcon role="img" aria-label="LinkedIn" />
       </IconLink>
-      <IconLink href={data.medium} target="_blank">
-        <MediumIcon />
+      <IconLink href={data.medium} rel="author" target="_blank">
+        <MediumIcon role="img" aria-label="Medium" />
       </IconLink>
     </ContactContainer>
   );

@@ -9,7 +9,7 @@ const propTypes = {
   html: PropTypes.node.isRequired,
 };
 
-const ContentContainer = styled.div`
+const ContentContainer = styled.article`
   ${({ theme }) => css`
     width: 42em;
 
@@ -22,7 +22,7 @@ const ContentContainer = styled.div`
 function Article({ title, html }) {
   return (
     <ContentContainer>
-      <Subtitle>{title}</Subtitle>
+      <Subtitle role="presentation">{title}</Subtitle>
       <Text dangerouslySetInnerHTML={{ __html: html }} />
     </ContentContainer>
   );

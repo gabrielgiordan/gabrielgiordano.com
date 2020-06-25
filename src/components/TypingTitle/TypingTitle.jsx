@@ -59,6 +59,9 @@ function TypingTitle({ quotes, loop }) {
     <TypingTitleContainer>
       <Title as="p">
         <Typing
+          role="region"
+          aria-live="off"
+          aria-label={quotes.join(" ")}
           steps={quotes.flatMap((e) => [e, 2000])}
           loop={loop}
           wrapper="span"
