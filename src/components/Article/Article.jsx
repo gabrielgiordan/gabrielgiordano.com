@@ -1,8 +1,8 @@
-import React from "react";
-import styled, { css } from "styled-components";
-import PropTypes from "prop-types";
+import React from 'react';
+import styled, { css } from 'styled-components';
+import PropTypes from 'prop-types';
 
-import { Text, Subtitle } from "../Text";
+import { Text, Subtitle } from '../Text';
 
 const propTypes = {
   title: PropTypes.node.isRequired,

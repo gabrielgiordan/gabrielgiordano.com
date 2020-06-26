@@ -1,3 +1,3 @@
-import TypingTitle from "./TypingTitle";
+import TypingTitle from './TypingTitle';
 
 export default TypingTitle;

@@ -1,11 +1,11 @@
-import React from "react";
-import styled from "styled-components";
-import { useStaticQuery, graphql } from "gatsby";
-import { SmallText } from "../Text";
-import { SmallIconLink } from "../Link";
-import GitHubIcon from "../../images/github-icon.inline.svg";
-import GatsbyIcon from "../../images/gatsby-icon.inline.svg";
-import ReactIcon from "../../images/react-icon.inline.svg";
+import React from 'react';
+import styled from 'styled-components';
+import { useStaticQuery, graphql } from 'gatsby';
+import { SmallText } from '../Text';
+import { SmallIconLink } from '../Link';
+import GitHubIcon from '../../images/github-icon.inline.svg';
+import GatsbyIcon from '../../images/gatsby-icon.inline.svg';
+import ReactIcon from '../../images/react-icon.inline.svg';
 
 const FooterContainer = styled.footer`
   display: flex;

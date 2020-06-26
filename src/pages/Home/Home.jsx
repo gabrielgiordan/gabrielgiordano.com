@@ -1,12 +1,12 @@
-import React from "react";
-import { useStaticQuery, graphql } from "gatsby";
+import React from 'react';
+import { useStaticQuery, graphql } from 'gatsby';
 
-import Base from "../../components/Base";
-import TypingTitle from "../../components/TypingTitle";
-import ContactIcons from "../../components/Contact";
-import Footer from "../../components/Footer";
-import SEO from "../../components/SEO";
-import Article from "../../components/Article";
+import Base from '../../components/Base';
+import TypingTitle from '../../components/TypingTitle';
+import ContactIcons from '../../components/Contact';
+import Footer from '../../components/Footer';
+import SEO from '../../components/SEO';
+import Article from '../../components/Article';
 
 function Home() {
   const {

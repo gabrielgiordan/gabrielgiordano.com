@@ -1,7 +1,7 @@
-import React from "react";
-import PropTypes from "prop-types";
-import { Helmet } from "react-helmet";
-import { helmetJsonLdProp } from "react-schemaorg";
+import React from 'react';
+import PropTypes from 'prop-types';
+import { Helmet } from 'react-helmet';
+import { helmetJsonLdProp } from 'react-schemaorg';
 
 const propTypes = {
   lang: PropTypes.string,
@@ -11,15 +11,15 @@ const propTypes = {
 };
 
 const defaultProps = {
-  lang: "en",
+  lang: 'en',
   meta: [],
-  image: "",
+  image: '',
 };
 
 function SEO({ lang, meta, title, image }) {
-  const author = "Gabriel Giordano";
+  const author = 'Gabriel Giordano';
   const description =
-    "Gabriel Giordano is a Software Engineer, currently working at SumUp previously at IBM and is also an open-source contributor.";
+    'Gabriel Giordano is a Software Engineer, currently working at SumUp previously at IBM and is also an open-source contributor.';
 
   return (
     <Helmet
@@ -30,105 +30,105 @@ function SEO({ lang, meta, title, image }) {
       titleTemplate={`%s - ${author}`}
       meta={[
         {
-          name: "author",
+          name: 'author',
           content: author,
         },
         {
-          name: "keywords",
+          name: 'keywords',
           content:
-            "Senior Software Engineer, Full Stack, Elixir, Erlang, OTP, Clojure, Scala, C, C++, Java, JavaScript, JS, React, Unity3d, Developer, Computer Science",
+            'Senior Software Engineer, Full Stack, Elixir, Erlang, OTP, Clojure, Scala, C, C++, Java, JavaScript, JS, React, Unity3d, Developer, Computer Science',
         },
         {
-          name: "subject",
-          content: "Software engineering",
+          name: 'subject',
+          content: 'Software engineering',
         },
         {
-          name: "description",
+          name: 'description',
           content: description,
         },
         {
-          property: "og:title",
+          property: 'og:title',
           content: title,
         },
         {
-          property: "og:description",
+          property: 'og:description',
           content: description,
         },
         {
-          property: "og:type",
-          content: "website",
+          property: 'og:type',
+          content: 'website',
         },
         {
-          property: "og:image",
+          property: 'og:image',
           content: image,
         },
         {
-          name: "twitter:image",
+          name: 'twitter:image',
           content: image,
         },
         {
-          name: "image",
+          name: 'image',
           content: image,
         },
         {
-          property: "og:site_name",
-          content: "Gabriel Giordano",
+          property: 'og:site_name',
+          content: 'Gabriel Giordano',
         },
         {
-          property: "og:locale",
-          content: "en_US",
+          property: 'og:locale',
+          content: 'en_US',
         },
         {
-          property: "og:type",
-          content: "website",
+          property: 'og:type',
+          content: 'website',
         },
         {
-          name: "twitter:card",
-          content: "summary",
+          name: 'twitter:card',
+          content: 'summary',
         },
         {
-          name: "twitter:creator",
-          content: "@gabrielgiord",
+          name: 'twitter:creator',
+          content: '@gabrielgiord',
         },
         {
-          name: "twitter:site",
-          content: "@gabrielgiord",
+          name: 'twitter:site',
+          content: '@gabrielgiord',
         },
         {
-          name: "twitter:title",
+          name: 'twitter:title',
           content: title,
         },
         {
-          name: "twitter:description",
+          name: 'twitter:description',
           content: description,
         },
       ].concat(meta)}
       script={[
         helmetJsonLdProp({
-          "@context": "https://schema.org",
-          "@type": "Person",
+          '@context': 'https://schema.org',
+          '@type': 'Person',
           name: author,
-          gender: "male",
-          alternateName: "Gabriel Giordano Medina",
-          nationality: "Brazilian",
-          description: "Software Engineer",
-          disambiguatingDescription: "Software Engineer at SumUp",
+          gender: 'male',
+          alternateName: 'Gabriel Giordano Medina',
+          nationality: 'Brazilian',
+          description: 'Software Engineer',
+          disambiguatingDescription: 'Software Engineer at SumUp',
           knowsAbout: [
-            "Software Engineering",
-            "Computer Science",
-            "System Design",
+            'Software Engineering',
+            'Computer Science',
+            'System Design',
           ],
           image:
-            "https://s.gravatar.com/avatar/6ea1b94c835fed259ad11d2133793a73?s=512",
-          email: "mailto:hello@gabrielgiordano.com",
-          url: "http://gabrielgiordano.com",
+            'https://s.gravatar.com/avatar/6ea1b94c835fed259ad11d2133793a73?s=512',
+          email: 'mailto:hello@gabrielgiordano.com',
+          url: 'http://gabrielgiordano.com',
           sameAs: [
-            "https://twitter.com/gabrielgiord",
-            "https://www.youtube.com/c/GabrielGiordanoMedina",
-            "https://www.linkedin.com/in/gabrielgiordano/",
-            "https://github.com/gabrielgiordan",
+            'https://twitter.com/gabrielgiord',
+            'https://www.youtube.com/c/GabrielGiordanoMedina',
+            'https://www.linkedin.com/in/gabrielgiordano/',
+            'https://github.com/gabrielgiordan',
           ],
-          jobTitle: "Software Engineer",
+          jobTitle: 'Software Engineer',
         }),
       ]}
     />

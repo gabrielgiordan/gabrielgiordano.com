@@ -1,7 +1,7 @@
-import styled, { css } from "styled-components";
-import { Title } from "./Text";
+import styled, { css } from 'styled-components';
+import { Title } from './Text';
 
-const Logo = styled(Title).attrs({ as: "p" })`
+const Logo = styled(Title).attrs({ as: 'p' })`
   ${({ theme }) => css`
     position: fixed;
     top: 2vh;

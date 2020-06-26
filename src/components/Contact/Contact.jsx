@@ -1,11 +1,11 @@
-import React from "react";
-import styled from "styled-components";
-import { useStaticQuery, graphql } from "gatsby";
-import MailIcon from "../../images/mail-icon.inline.svg";
-import GitHubIcon from "../../images/github-icon.inline.svg";
-import LinkedInIcon from "../../images/linkedin-icon.inline.svg";
-import MediumIcon from "../../images/medium-icon.inline.svg";
-import { IconLink } from "../Link";
+import React from 'react';
+import styled from 'styled-components';
+import { useStaticQuery, graphql } from 'gatsby';
+import MailIcon from '../../images/mail-icon.inline.svg';
+import GitHubIcon from '../../images/github-icon.inline.svg';
+import LinkedInIcon from '../../images/linkedin-icon.inline.svg';
+import MediumIcon from '../../images/medium-icon.inline.svg';
+import { IconLink } from '../Link';
 
 const ContactContainer = styled.div`
   display: flex;

@@ -1,14 +1,14 @@
-import React from "react";
-import PropTypes from "prop-types";
+import React from 'react';
+import PropTypes from 'prop-types';
 import styled, {
   css,
   createGlobalStyle,
   ThemeProvider,
-} from "styled-components";
-import { normalize } from "styled-normalize";
-import BlueprintPattern from "../../images/blueprint.svg";
-import darkTheme from "./dark-theme";
-import baseTheme from "./base-theme";
+} from 'styled-components';
+import { normalize } from 'styled-normalize';
+import BlueprintPattern from '../../images/blueprint.svg';
+import darkTheme from './dark-theme';
+import baseTheme from './base-theme';
 
 const propTypes = {
   children: PropTypes.node.isRequired,

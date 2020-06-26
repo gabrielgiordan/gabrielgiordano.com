@@ -1,4 +1,4 @@
-import styled, { css } from "styled-components";
+import styled, { css } from 'styled-components';
 
 const Text = styled.p`
   ${({ theme }) => css`
@@ -30,7 +30,7 @@ const SmallText = styled(Text)`
   `}
 `;
 
-const Title = styled(Text).attrs({ as: "h1" })`
+const Title = styled(Text).attrs({ as: 'h1' })`
   ${({ theme }) => css`
     display: inline;
     font-weight: 700;
@@ -48,7 +48,7 @@ const Title = styled(Text).attrs({ as: "h1" })`
   `}
 `;
 
-const Subtitle = styled(Text).attrs({ as: "h2" })`
+const Subtitle = styled(Text).attrs({ as: 'h2' })`
   ${({ theme }) => css`
     display: inline;
     font-size: 1.5em;

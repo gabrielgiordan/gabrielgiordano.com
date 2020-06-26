@@ -1,10 +1,10 @@
-import React from "react";
-import { useStaticQuery, graphql } from "gatsby";
-import Base from "../../components/Base";
-import Footer from "../../components/Footer";
-import SEO from "../../components/SEO";
-import TypingTitle from "../../components/TypingTitle";
-import Article from "../../components/Article";
+import React from 'react';
+import { useStaticQuery, graphql } from 'gatsby';
+import Base from '../../components/Base';
+import Footer from '../../components/Footer';
+import SEO from '../../components/SEO';
+import TypingTitle from '../../components/TypingTitle';
+import Article from '../../components/Article';
 
 function NotFound() {
   const {

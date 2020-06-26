@@ -1,3 +1,3 @@
-import { Link, IconLink, SmallIconLink } from "./Link";
+import { Link, IconLink, SmallIconLink } from './Link';
 
 export { Link, IconLink, SmallIconLink };

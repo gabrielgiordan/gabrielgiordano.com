@@ -1,9 +1,9 @@
-import PropTypes from "prop-types";
-import React from "react";
-import Typical from "react-typical";
-import styled, { css } from "styled-components";
+import PropTypes from 'prop-types';
+import React from 'react';
+import Typical from 'react-typical';
+import styled, { css } from 'styled-components';
 
-import { Title } from "../Text";
+import { Title } from '../Text';
 
 const propTypes = {
   quotes: PropTypes.arrayOf(PropTypes.string),
@@ -61,7 +61,7 @@ function TypingTitle({ quotes, loop }) {
         <Typing
           role="region"
           aria-live="off"
-          aria-label={quotes.join(" ")}
+          aria-label={quotes.join(' ')}
           steps={quotes.flatMap((e) => [e, 2000])}
           loop={loop}
           wrapper="span"

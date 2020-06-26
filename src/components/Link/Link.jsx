@@ -1,7 +1,7 @@
-import styled, { css } from "styled-components";
-import { Text } from "../Text";
+import styled, { css } from 'styled-components';
+import { Text } from '../Text';
 
-const Link = styled(Text).attrs({ as: "a" })`
+const Link = styled(Text).attrs({ as: 'a' })`
   ${({ theme }) => css`
     font-size: inherit;
     text-decoration: none;
