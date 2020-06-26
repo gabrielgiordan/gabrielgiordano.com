@@ -1,4 +1,7 @@
 module.exports = {
+  siteMetadata: {
+    siteUrl: `https://gabrielgiordano.com`,
+  },
   plugins: [
     "gatsby-plugin-react-helmet",
     {
@@ -63,5 +66,7 @@ module.exports = {
     },
     "gatsby-plugin-offline",
     "gatsby-plugin-no-sourcemaps",
+    "gatsby-plugin-robots-txt",
+    "gatsby-plugin-sitemap",
   ],
 };
