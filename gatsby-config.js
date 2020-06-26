@@ -61,7 +61,16 @@ module.exports = {
     {
       resolve: 'gatsby-plugin-preconnect',
       options: {
-        domains: ['https://fonts.gstatic.com', 'https://fonts.googleapis.com'],
+        domains: [
+          {
+            domain: 'https://fonts.gstatic.com',
+            crossOrigin: true,
+          },
+          {
+            domain: 'https://fonts.googleapis.com',
+            crossOrigin: true,
+          },
+        ],
       },
     },
     'gatsby-plugin-offline',
