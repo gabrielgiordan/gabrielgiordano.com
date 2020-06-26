@@ -66,8 +66,8 @@ module.exports = {
     },
     'gatsby-plugin-offline',
     'gatsby-plugin-no-sourcemaps',
+    'gatsby-plugin-advanced-sitemap',
     'gatsby-plugin-robots-txt',
-    'gatsby-plugin-sitemap',
     {
       resolve: 'gatsby-plugin-html-minifier',
       options: {
