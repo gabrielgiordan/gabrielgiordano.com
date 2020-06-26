@@ -52,10 +52,12 @@
     "build": "gatsby build",
     "start": "gatsby develop",
     "format": "prettier --write \"**/*.{js,jsx,ts,tsx,json,md}\"",
+    "format-check": "prettier --write \"**/*.{js,jsx,ts,tsx,json,md}\"",
     "serve": "gatsby serve",
     "clean": "gatsby clean",
-    "lint": "eslint --ignore-path .gitignore .",
-    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
+    "lint": "eslint --ignore-path .gitignore \"./**/*.{js,jsx,tx,tsx}\"",
+    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1",
+    "ci": "yarn format-check && yarn lint"
   },
   "repository": {
     "type": "git",
