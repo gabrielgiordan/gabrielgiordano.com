@@ -2,11 +2,13 @@
 
 # [gabrielgiordano.com](https://gabrielgiordano.com)
 
-Personal site made with React and Gatsby, hosted on GitHub pages.
+Personal site made with **React** and **Gatsby**, hosted on **GitHub pages**.
 
-This project follows the [Airbnb React style guide](https://github.com/airbnb/javascript/tree/master/react) with also the help of `eslint` and `prettier` configured for such.
+Achieves the highest **Lighthouse** scores on reports at production.
 
-![gabrielgiordano.com](/src/images/image.png)
+![gabrielgiordano.com](lighthouse.png)
+
+Also, this project follows the [Airbnb React style guide](https://github.com/airbnb/javascript/tree/master/react) with also the help of `eslint` and `prettier` configured for such.
 
 ## Usage
 
