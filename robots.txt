@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+Sitemap: https://gabrielgiordano.com/sitemap.xml
+Host: https://gabrielgiordano.com
