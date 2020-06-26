@@ -13,7 +13,7 @@ contact:
   linkedin: https://www.linkedin.com/in/gabrielgiordano/
   medium: https://medium.com/@gabrielgiordano
 footer:
-  repository: https://github.com/gabrielgiordan/personal-site
+  repository: https://github.com/gabrielgiordan/gabrielgiordano.com
   gatsby: https://www.gatsbyjs.org/
   react: https://reactjs.org/
 ---
