@@ -34,6 +34,7 @@ module.exports = {
         },
       },
     },
+    "babel-plugin-styled-components",
     "gatsby-plugin-styled-components",
     {
       resolve: "gatsby-source-filesystem",
@@ -42,7 +43,6 @@ module.exports = {
         path: `${__dirname}/src/markdown`,
       },
     },
-    "babel-plugin-styled-components",
     "gatsby-transformer-remark",
     {
       resolve: "gatsby-plugin-gtag",
@@ -68,5 +68,16 @@ module.exports = {
     "gatsby-plugin-no-sourcemaps",
     "gatsby-plugin-robots-txt",
     "gatsby-plugin-sitemap",
+    {
+      resolve: "gatsby-plugin-html-minifier",
+      options: {
+        minifyCSS: false,
+        minifyJS: true,
+        sortAttributes: true,
+        useShortDoctype: true,
+        removeAttributeQuotes: true,
+        collapseBooleanAttributes: true,
+      },
+    },
   ],
 };
