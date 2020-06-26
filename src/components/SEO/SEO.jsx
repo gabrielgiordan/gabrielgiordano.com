@@ -6,15 +6,17 @@ import { helmetJsonLdProp } from "react-schemaorg";
 const propTypes = {
   lang: PropTypes.string,
   meta: PropTypes.arrayOf(PropTypes.object),
+  image: PropTypes.string,
   title: PropTypes.string.isRequired,
 };
 
 const defaultProps = {
-  lang: `en`,
+  lang: "en",
   meta: [],
+  image: "",
 };
 
-function SEO({ lang, meta, title }) {
+function SEO({ lang, meta, title, image }) {
   const author = "Gabriel Giordano";
   const description =
     "Gabriel Giordano is a Software Engineer, currently working at SumUp previously at IBM and is also an open-source contributor.";
@@ -28,64 +30,76 @@ function SEO({ lang, meta, title }) {
       titleTemplate={`%s - ${author}`}
       meta={[
         {
-          name: `author`,
+          name: "author",
           content: author,
         },
         {
-          name: `keywords`,
+          name: "keywords",
           content:
             "Senior Software Engineer, Full Stack, Elixir, Erlang, OTP, Clojure, Scala, C, C++, Java, JavaScript, JS, React, Unity3d, Developer, Computer Science",
         },
         {
-          name: `subject`,
+          name: "subject",
           content: "Software engineering",
         },
         {
-          name: `description`,
+          name: "description",
           content: description,
         },
         {
-          property: `og:title`,
+          property: "og:title",
           content: title,
         },
         {
-          property: `og:description`,
+          property: "og:description",
           content: description,
         },
         {
-          property: `og:type`,
-          content: `website`,
+          property: "og:type",
+          content: "website",
         },
         {
-          property: `og:site_name`,
-          content: `Gabriel Giordano`,
+          property: "og:image",
+          content: image,
         },
         {
-          property: `og:locale`,
-          content: `en_US`,
+          name: "twitter:image",
+          content: image,
         },
         {
-          property: `og:type`,
-          content: `website`,
+          name: "image",
+          content: image,
         },
         {
-          name: `twitter:card`,
-          content: `summary`,
+          property: "og:site_name",
+          content: "Gabriel Giordano",
         },
         {
-          name: `twitter:creator`,
+          property: "og:locale",
+          content: "en_US",
+        },
+        {
+          property: "og:type",
+          content: "website",
+        },
+        {
+          name: "twitter:card",
+          content: "summary",
+        },
+        {
+          name: "twitter:creator",
           content: "@gabrielgiord",
         },
         {
-          name: `twitter:site`,
+          name: "twitter:site",
           content: "@gabrielgiord",
         },
         {
-          name: `twitter:title`,
+          name: "twitter:title",
           content: title,
         },
         {
-          name: `twitter:description`,
+          name: "twitter:description",
           content: description,
         },
       ].concat(meta)}
@@ -94,10 +108,10 @@ function SEO({ lang, meta, title }) {
           "@context": "https://schema.org",
           "@type": "Person",
           name: author,
-          gender: `male`,
+          gender: "male",
           alternateName: "Gabriel Giordano Medina",
-          nationality: `Brazilian`,
-          description: `Software Engineer`,
+          nationality: "Brazilian",
+          description: "Software Engineer",
           disambiguatingDescription: "Software Engineer at SumUp",
           knowsAbout: [
             "Software Engineering",

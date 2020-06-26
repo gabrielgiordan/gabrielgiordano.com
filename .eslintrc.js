@@ -4,8 +4,14 @@ module.exports = {
     es6: true,
     jest: true,
   },
-  extends: ["plugin:react/recommended", "airbnb", "prettier", "prettier/react"],
-  plugins: ["prettier", "react"],
+  plugins: ["prettier", "react", "jsx-a11y"],
+  extends: [
+    "plugin:react/recommended",
+    "airbnb",
+    "prettier",
+    "prettier/react",
+    "plugin:jsx-a11y/strict",
+  ],
   globals: {
     __PATH_PREFIX__: true,
     Atomics: "readonly",

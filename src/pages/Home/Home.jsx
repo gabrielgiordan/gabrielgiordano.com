@@ -10,9 +10,19 @@ import Article from "../../components/Article";
 
 function Home() {
   const {
+    file: {
+      childImageSharp: { fixed: image },
+    },
     markdownRemark: { frontmatter: data, html: content },
   } = useStaticQuery(graphql`
     {
+      file(relativePath: { eq: "image.png" }) {
+        childImageSharp {
+          fixed(width: 1200) {
+            src
+          }
+        }
+      }
       markdownRemark(frontmatter: { page: { eq: "/" } }) {
         frontmatter {
           quotes
@@ -25,7 +35,7 @@ function Home() {
 
   return (
     <>
-      <SEO title="Home" />
+      <SEO title="Home" image={image.src} />
       <Base>
         <TypingTitle quotes={data.quotes} loop={Infinity} />
         <Article title={data.title} html={content} />

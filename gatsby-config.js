@@ -8,8 +8,8 @@ module.exports = {
         path: `${__dirname}/src/images`,
       },
     },
-    "gatsby-transformer-sharp",
     "gatsby-plugin-sharp",
+    "gatsby-transformer-sharp",
     {
       resolve: "gatsby-plugin-manifest",
       options: {
@@ -39,6 +39,7 @@ module.exports = {
         path: `${__dirname}/src/markdown`,
       },
     },
+    "babel-plugin-styled-components",
     "gatsby-transformer-remark",
     {
       resolve: "gatsby-plugin-gtag",
