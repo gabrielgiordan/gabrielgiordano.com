@@ -1,11 +1,11 @@
 import React from 'react';
 import styled from 'styled-components';
 import { useStaticQuery, graphql } from 'gatsby';
-import { SmallText } from '../Text';
-import { SmallIconLink } from '../Link';
-import GitHubIcon from '../../images/github-icon.inline.svg';
-import GatsbyIcon from '../../images/gatsby-icon.inline.svg';
-import ReactIcon from '../../images/react-icon.inline.svg';
+import { SmallText } from './Text';
+import { SmallIconLink } from './Link';
+import GitHubIconSVG from '../images/svg/github-icon.inline.svg';
+import GatsbyIconSVG from '../images/svg/gatsby-icon.inline.svg';
+import ReactIconSVG from '../images/svg/react-icon.inline.svg';
 
 const FooterContainer = styled.footer`
   display: flex;
@@ -29,17 +29,17 @@ const FooterContentContainer = styled.div`
 
 function Footer() {
   const {
-    markdownRemark: {
-      frontmatter: { footer: data },
+    site: {
+      siteMetadata: { siteSocial },
     },
   } = useStaticQuery(graphql`
-    {
-      markdownRemark(frontmatter: { page: { eq: "/" } }) {
-        frontmatter {
-          footer {
+    query Footer {
+      site {
+        siteMetadata {
+          siteSocial {
             repository
-            gatsby
             react
+            gatsby
           }
         }
       }
@@ -51,27 +51,27 @@ function Footer() {
       <FooterContentContainer>
         <SmallText>Open-sourced on </SmallText>
         <SmallIconLink
-          href={data.repository}
+          href={siteSocial.repository}
           rel="external noopener"
           target="_blank"
         >
-          <GitHubIcon role="img" aria-label="GitHub Repository" />
+          <GitHubIconSVG role="img" aria-label="GitHub Repository" />
         </SmallIconLink>
         <SmallText>built with </SmallText>
         <SmallIconLink
-          href={data.react}
+          href={siteSocial.react}
           rel="external noopener"
           target="_blank"
         >
-          <ReactIcon role="img" aria-label="React" />
+          <ReactIconSVG role="img" aria-label="React" />
         </SmallIconLink>
         <SmallText>,</SmallText>
         <SmallIconLink
-          href={data.gatsby}
+          href={siteSocial.gatsby}
           rel="external noopener"
           target="_blank"
         >
-          <GatsbyIcon role="img" aria-label="Gatsby" />
+          <GatsbyIconSVG role="img" aria-label="Gatsby" />
         </SmallIconLink>
         <SmallText>.</SmallText>
       </FooterContentContainer>

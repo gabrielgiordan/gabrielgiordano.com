@@ -1,5 +1,5 @@
 import styled, { css } from 'styled-components';
-import { Title } from '../Text';
+import { Title } from './Text';
 
 const Logo = styled(Title).attrs({ as: 'p' })`
   ${({ theme }) => css`

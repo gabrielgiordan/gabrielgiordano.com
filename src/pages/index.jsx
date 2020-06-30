@@ -2,7 +2,7 @@ import React from 'react';
 import { useStaticQuery, graphql } from 'gatsby';
 
 import Base from '../components/Base';
-import TypingTitle from '../components/TypingTitle';
+import LiveTitle from '../components/LiveTitle';
 import ContactIcons from '../components/Contact';
 import Footer from '../components/Footer';
 import SEO from '../components/SEO';
@@ -15,18 +15,25 @@ function Home() {
     },
     markdownRemark: { frontmatter: data, html: content },
   } = useStaticQuery(graphql`
-    {
+    query Home {
       file(relativePath: { eq: "image.png" }) {
         childImageSharp {
-          fixed(width: 1200) {
+          fixed(width: 1200, height: 630) {
             src
           }
         }
       }
-      markdownRemark(frontmatter: { page: { eq: "/" } }) {
+      markdownRemark(frontmatter: { slug: { eq: "/" } }) {
         frontmatter {
-          quotes
-          title
+          lang
+          seo {
+            title
+            description
+          }
+          content {
+            liveTitle
+            title
+          }
         }
         html
       }
@@ -35,10 +42,15 @@ function Home() {
 
   return (
     <>
-      <SEO title="Home" image={image.src} />
+      <SEO
+        lang={data.lang}
+        title={data.seo.title}
+        description={data.seo.description}
+        image={image.src}
+      />
       <Base>
-        <TypingTitle quotes={data.quotes} loop={Infinity} />
-        <Article title={data.title} html={content} />
+        <LiveTitle liveTitle={data.content.liveTitle} loop={Infinity} />
+        <Article title={data.content.title} html={content} />
         <ContactIcons />
         <Footer />
       </Base>

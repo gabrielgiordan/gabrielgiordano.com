@@ -1,10 +1,9 @@
 import styled, { css } from 'styled-components';
-import { Text } from '../Text';
+import { Text } from './Text';
 
 const Link = styled(Text).attrs({ as: 'a' })`
   ${({ theme }) => css`
     font-size: inherit;
-    text-decoration: none;
 
     &:hover {
       color: ${theme.colors.p30};

@@ -1,0 +1,16 @@
+         _
+        /\ \
+       /  \ \
+      / /\ \_\
+     / / /\/_/
+    / / / ______
+   / / / /\_____\
+  / / /  \/____ /
+ / / /_____/ / /
+/ / /______\/ /
+\/___________/
+
+
+This website was built with React and Gatsby by Gabriel Giordano Medina.
+
+hello@gabrielgiordano.com

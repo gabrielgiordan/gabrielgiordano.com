@@ -1,7 +1,44 @@
+const author = {
+  name: 'Gabriel Giordano Medina',
+  jobTitle: 'Software Engineer',
+  description: 'Software Engineer',
+  disambiguatingDescription: 'Software Engineer at SumUp',
+  nationality: 'Brazilian',
+  gender: 'male',
+  knowsAbout: ['Software Engineering', 'Computer Science'],
+  url: 'http://gabrielgiordano.com',
+  image: 'https://s.gravatar.com/avatar/6ea1b94c835fed259ad11d2133793a73?s=512',
+  email: 'mailto:hello@gabrielgiordano.com',
+};
+
+const authorSocial = {
+  github: 'https://github.com/gabrielgiordan',
+  linkedin: 'https://www.linkedin.com/in/gabrielgiordano/',
+  stackoverflow:
+    'https://stackoverflow.com/users/2715963/gabriel-giordano-medina',
+  medium: 'https://medium.com/@gabrielgiordano',
+  twitter: 'https://twitter.com/gabrielgiord',
+  youtube: 'https://www.youtube.com/c/GabrielGiordanoMedina',
+  slideshare: 'https://www.slideshare.net/GabrielGiordanoMedin',
+};
+
+const siteSocial = {
+  repository: 'https://github.com/gabrielgiordan/gabrielgiordano.com',
+  gatsby: 'https://www.gatsbyjs.org/',
+  react: 'https://reactjs.org/',
+};
+
+const siteMetadata = {
+  siteUrl: 'https://gabrielgiordano.com',
+  siteName: 'Gabriel Giordano',
+  siteSocial,
+  googleAnalyticsTrackingId: 'UA-48045203-1',
+  author,
+  authorSocial,
+};
+
 module.exports = {
-  siteMetadata: {
-    siteUrl: `https://gabrielgiordano.com`,
-  },
+  siteMetadata,
   plugins: [
     'gatsby-plugin-react-helmet',
     {
@@ -16,12 +53,12 @@ module.exports = {
     {
       resolve: 'gatsby-plugin-manifest',
       options: {
-        name: 'Gabriel Giordano',
-        short_name: 'Gabriel Giordano',
+        name: siteMetadata.siteName,
+        short_name: siteMetadata.siteName,
         start_url: '/',
         background_color: '#222222',
         theme_color: '#222222',
-        display: 'minimal-ui',
+        display: 'standalone',
         icon: 'src/images/icon.png',
       },
     },
@@ -39,15 +76,15 @@ module.exports = {
     {
       resolve: 'gatsby-source-filesystem',
       options: {
-        name: 'markdown',
-        path: `${__dirname}/src/markdown`,
+        name: 'content',
+        path: `${__dirname}/src/content`,
       },
     },
     'gatsby-transformer-remark',
     {
       resolve: 'gatsby-plugin-gtag',
       options: {
-        trackingId: 'UA-48045203-1',
+        trackingId: siteMetadata.googleAnalyticsTrackingId,
       },
     },
     {

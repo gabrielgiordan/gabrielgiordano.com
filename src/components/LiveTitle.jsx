@@ -3,19 +3,19 @@ import React from 'react';
 import Typical from 'react-typical';
 import styled, { css } from 'styled-components';
 
-import { Title } from '../Text';
+import { Title } from './Text';
 
 const propTypes = {
-  quotes: PropTypes.arrayOf(PropTypes.string),
+  liveTitle: PropTypes.arrayOf(PropTypes.string),
   loop: PropTypes.number,
 };
 
 const defaultProps = {
-  quotes: [],
+  liveTitle: [],
   loop: Infinity,
 };
 
-const TypingTitleContainer = styled.div`
+const LiveTitleContainer = styled.div`
   ${({ theme }) => css`
     width: 0;
     height: 29em;
@@ -54,24 +54,24 @@ const Typing = styled(Typical)`
   `}
 `;
 
-function TypingTitle({ quotes, loop }) {
+function LiveTitle({ liveTitle, loop }) {
   return (
-    <TypingTitleContainer>
+    <LiveTitleContainer>
       <Title as="p">
         <Typing
           role="region"
           aria-live="off"
-          aria-label={quotes.join(' ')}
-          steps={quotes.flatMap((e) => [e, 2000])}
+          aria-label={liveTitle.join(' ')}
+          steps={liveTitle.flatMap((e) => [e, 2000])}
           loop={loop}
           wrapper="span"
         />
       </Title>
-    </TypingTitleContainer>
+    </LiveTitleContainer>
   );
 }
 
-TypingTitle.propTypes = propTypes;
-TypingTitle.defaultProps = defaultProps;
+LiveTitle.propTypes = propTypes;
+LiveTitle.defaultProps = defaultProps;
 
-export default TypingTitle;
+export default LiveTitle;

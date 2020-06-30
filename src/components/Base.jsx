@@ -6,9 +6,9 @@ import styled, {
   ThemeProvider,
 } from 'styled-components';
 import { normalize } from 'styled-normalize';
-import BlueprintPattern from '../../images/blueprint.svg';
-import darkTheme from './dark-theme';
-import baseTheme from './base-theme';
+import BlueprintBackgroundSVG from '../images/svg/blueprint-background.svg';
+import mainTheme from '../themes/main-theme';
+import mainThemeColors from '../themes/main-theme-colors';
 
 const propTypes = {
   children: PropTypes.node.isRequired,
@@ -70,7 +70,7 @@ const GradientBackground = styled.div`
 
 const PatternBackground = styled.div`
   ${({ theme }) => css`
-    background-image: url(${BlueprintPattern});
+    background-image: url(${BlueprintBackgroundSVG});
 
     background-size: 6em 6em;
     background-position: 5.75em 5.75em;
@@ -109,8 +109,8 @@ const FlexChildContainer = styled.div`
 function Base({ children }) {
   return (
     <>
-      <ThemeProvider theme={baseTheme}>
-        <ThemeProvider theme={darkTheme}>
+      <ThemeProvider theme={mainTheme}>
+        <ThemeProvider theme={mainThemeColors}>
           <GlobalStyle />
           <GradientBackground>
             <PatternBackground>
