@@ -10,6 +10,7 @@
 / / /______\/ /
 \/___________/
 
+
 This website was built with React and Gatsby by Gabriel Giordano Medina.
 
 hello@gabrielgiordano.com
