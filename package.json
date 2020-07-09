@@ -28,7 +28,7 @@
     "gatsby-react-router-scroll": "^3.0.9",
     "gatsby-source-filesystem": "^2.3.18",
     "gatsby-source-graphql": "^2.5.7",
-    "gatsby-transformer-remark": "^2.8.22",
+    "gatsby-transformer-remark": "^2.8.24",
     "gatsby-transformer-sharp": "^2.5.9",
     "html-minifier": "^4.0.0",
     "prop-types": "^15.7.2",
