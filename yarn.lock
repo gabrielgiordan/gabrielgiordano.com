@@ -6399,10 +6399,17 @@ gatsby-plugin-web-font-loader@^1.0.4:
     babel-runtime "^6.26.0"
     webfontloader "^1.6.28"
 
-gatsby-react-router-scroll@3.0.10, gatsby-react-router-scroll@^3.0.9:
+gatsby-react-router-scroll@3.0.10:
   version "3.0.10"
   resolved "https://registry.yarnpkg.com/gatsby-react-router-scroll/-/gatsby-react-router-scroll-3.0.10.tgz#7a2a27d11ff2739eb47150941ef72e02faf7a968"
   integrity sha512-Y+hHnrHbvKYh8+r6SFD4X0JLyYyoO+CCLGYvzLSF8lxBQLsSUeqm2ad9HHBeUktzs7DxIX+Ub9Nr7YCsFfQS+Q==
+  dependencies:
+    "@babel/runtime" "^7.10.3"
+
+gatsby-react-router-scroll@^3.0.11:
+  version "3.0.11"
+  resolved "https://registry.yarnpkg.com/gatsby-react-router-scroll/-/gatsby-react-router-scroll-3.0.11.tgz#30669bde859e7e72b5f33653c8fa49eb17c8fcc4"
+  integrity sha512-5eok4FySl0YeegwThOxmlyEiS37SOUB7ekfVkdxnPcEFNhLF5oSx/BnmhmuivUTwKDBJwW6wFXWB9qPZ8OessA==
   dependencies:
     "@babel/runtime" "^7.10.3"
 
