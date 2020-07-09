@@ -10,7 +10,7 @@
     "babel-plugin-styled-components": "^1.10.7",
     "gatsby": "^2.23.22-static-query-template.8",
     "gatsby-image": "^2.4.11",
-    "gatsby-link": "^2.4.8",
+    "gatsby-link": "^2.4.12",
     "gatsby-plugin-advanced-sitemap": "^1.5.5",
     "gatsby-plugin-gtag": "^1.0.13",
     "gatsby-plugin-html-minifier": "^2.0.0",
