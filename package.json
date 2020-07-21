@@ -16,7 +16,7 @@
     "gatsby-plugin-html-minifier": "^2.0.0",
     "gatsby-plugin-manifest": "^2.4.18",
     "gatsby-plugin-no-sourcemaps": "^2.2.0",
-    "gatsby-plugin-offline": "^3.2.17",
+    "gatsby-plugin-offline": "^3.2.19",
     "gatsby-plugin-optimize-svgs": "^1.0.4",
     "gatsby-plugin-preconnect": "^1.1.54",
     "gatsby-plugin-react-helmet": "^3.3.10",
