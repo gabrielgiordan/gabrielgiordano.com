@@ -20,6 +20,7 @@ const authorSocial = {
   twitter: 'https://twitter.com/gabrielgiord',
   youtube: 'https://www.youtube.com/c/GabrielGiordanoMedina',
   slideshare: 'https://www.slideshare.net/GabrielGiordanoMedin',
+  stackshare: 'https://stackshare.io/gabrielgiordan',
 };
 
 const siteSocial = {
