@@ -22,7 +22,7 @@
     "gatsby-plugin-react-helmet": "^3.3.10",
     "gatsby-plugin-react-svg": "^3.0.0",
     "gatsby-plugin-robots-txt": "^1.5.1",
-    "gatsby-plugin-sharp": "^2.6.21",
+    "gatsby-plugin-sharp": "^2.6.23",
     "gatsby-plugin-styled-components": "^3.3.10",
     "gatsby-plugin-web-font-loader": "^1.0.4",
     "gatsby-react-router-scroll": "^3.0.12",
