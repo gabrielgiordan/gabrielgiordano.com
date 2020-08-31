@@ -26,7 +26,7 @@
     "gatsby-plugin-styled-components": "^3.3.10",
     "gatsby-plugin-web-font-loader": "^1.0.4",
     "gatsby-react-router-scroll": "^3.0.12",
-    "gatsby-source-filesystem": "^2.3.22",
+    "gatsby-source-filesystem": "^2.3.27",
     "gatsby-source-graphql": "^2.6.2",
     "gatsby-transformer-remark": "^2.8.26",
     "gatsby-transformer-sharp": "^2.5.11",
