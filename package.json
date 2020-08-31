@@ -14,7 +14,7 @@
     "gatsby-plugin-advanced-sitemap": "^1.5.5",
     "gatsby-plugin-gtag": "^1.0.13",
     "gatsby-plugin-html-minifier": "^2.0.0",
-    "gatsby-plugin-manifest": "^2.4.20",
+    "gatsby-plugin-manifest": "^2.4.27",
     "gatsby-plugin-no-sourcemaps": "^2.2.0",
     "gatsby-plugin-offline": "^3.2.20",
     "gatsby-plugin-optimize-svgs": "^1.0.4",
