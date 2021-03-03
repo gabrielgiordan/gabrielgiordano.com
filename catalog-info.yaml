@@ -1,0 +1,10 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: gabrielgiordano.com
+  annotations:
+    github.com/project-slug: gabrielgiordan/gabrielgiordano.com
+spec:
+  type: other
+  lifecycle: unknown
+  owner: team-a
