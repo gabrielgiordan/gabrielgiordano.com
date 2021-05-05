@@ -9,7 +9,6 @@ module.exports = {
     'plugin:react/recommended',
     'airbnb',
     'prettier',
-    'prettier/react',
     'plugin:jsx-a11y/strict',
   ],
   globals: {
