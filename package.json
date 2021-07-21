@@ -30,7 +30,7 @@
     "gatsby-react-router-scroll": "^4.4.0",
     "gatsby-source-filesystem": "^3.4.0",
     "gatsby-source-graphql": "^3.4.0",
-    "gatsby-transformer-remark": "^4.1.0",
+    "gatsby-transformer-remark": "^4.7.0",
     "gatsby-transformer-sharp": "^3.4.0",
     "html-minifier": "^4.0.0",
     "prop-types": "^15.7.2",
