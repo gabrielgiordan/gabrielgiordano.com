@@ -6260,10 +6260,10 @@ gatsby-plugin-manifest@^3.4.0:
     semver "^7.3.2"
     sharp "^0.28.0"
 
-gatsby-plugin-no-sourcemaps@^3.4.0:
-  version "3.4.0"
-  resolved "https://registry.yarnpkg.com/gatsby-plugin-no-sourcemaps/-/gatsby-plugin-no-sourcemaps-3.4.0.tgz#196031be8a0c41d10c979bdf1b2c6e7c03a157d6"
-  integrity sha512-ct4udJhtZWogvtBWl3lGaLdymqq+g1E77o4ROq42aW+cp2Mreqj6x1sXyxsOHIvvPWB5woich5KBLqeqY6EN6g==
+gatsby-plugin-no-sourcemaps@^3.10.0:
+  version "3.10.0"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-no-sourcemaps/-/gatsby-plugin-no-sourcemaps-3.10.0.tgz#f8a4ada487953bc6c8fec8ef7652d6ea2924fc8d"
+  integrity sha512-rfqf/1ojn/lNWH/XoAE/E2UkrEEK7sbIeVXZgEHGE8rXDzw9ZD6BHcBnp6+RedaK1Xavzx+M+9w6s6EGenjH6Q==
 
 gatsby-plugin-offline@^4.4.0:
   version "4.4.0"
