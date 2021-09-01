@@ -17,7 +17,7 @@
     "gatsby-plugin-gtag": "^1.0.13",
     "gatsby-plugin-html-minifier": "^2.0.0",
     "gatsby-plugin-manifest": "^3.4.0",
-    "gatsby-plugin-no-sourcemaps": "^3.4.0",
+    "gatsby-plugin-no-sourcemaps": "^3.13.0",
     "gatsby-plugin-offline": "^4.4.0",
     "gatsby-plugin-optimize-svgs": "^1.0.5",
     "gatsby-plugin-preconnect": "^1.2.0",
